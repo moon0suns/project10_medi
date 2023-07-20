@@ -4,7 +4,7 @@ html {
 
 /* 1rem = 1px */
 
-@media (max-width: 540px) {
+@media (max-width: 500px) {
     html {
         font-size: 0.25641025641vw;
         /* 390 size에 맞춤 (16/390*6.25/100) */
