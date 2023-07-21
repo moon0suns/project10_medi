@@ -597,11 +597,22 @@
 @media (max-width: 768px) {
 
     .main_visual .arrows {
-        width: 100rem;
+        bottom: 60rem;
+        width: 100%;
     }
 
     .main_visual .arrows i {
-        font-size: 18rem;
+        font-size: 14rem;
+    }
+
+    .main_visual .arrows .left {
+        position: absolute;
+        left: 15rem;
+    }
+
+    .main_visual .arrows .right {
+        position: absolute;
+        right: 15rem;
     }
 
 }
@@ -630,6 +641,21 @@
     height: 85rem;
     background: #b3b3b3;
 
+}
+
+
+@media (max-width: 768px) {
+
+
+    .main_visual .scroll {
+        display: none;
+    }
+
+
+    .main_visual .scroll::after {
+        top: 72rem;
+        height: 70rem
+    }
 }
 
 
@@ -845,11 +871,11 @@
 
     .main_doctor .arrows {
         position: absolute;
-        top: 62%;
+        top: 72%;
         left: 50%;
         transform: translate(-50%, 0);
         z-index: 9999;
-        max-width: 580px;
+        max-width: 100%;
         width: 100%;
         padding: 0 15px;
 
@@ -857,7 +883,7 @@
     }
 
     .main_doctor .arrows i {
-        font-size: 30rem;
+        font-size: 25rem;
         color: #fff;
         border: none;
         padding: 10rem;
@@ -925,9 +951,7 @@
     padding: 50rem;
 }
 
-.main_story .story_con .fg {
-    margin: 0 0 0 -25rem;
-}
+.main_story .story_con .fg {}
 
 @media (max-width: 768px) {
     .main_story::before {
@@ -942,6 +966,10 @@
 
     .main_story .story_con .fg {
         order: 2;
+    }
+
+    .main_story .story_con figcaption {
+        margin: -15rem 0 0 -35rem;
     }
 }
 
