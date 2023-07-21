@@ -543,6 +543,50 @@
 
 }
 
+/* @media (max-width: 500px) {
+    .main_visual .mbg_txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 1200rem;
+        width: 100%;
+        padding: 0 15rem;
+        color: #fff;
+    }
+
+
+
+    .main_visual .mbg_txt h2 {
+        font-size: 0;
+        background: none;
+    }
+
+    .main_visual .mbg_txt h2::before {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        background: url(../images/main_visual_symbol.svg) no-repeat;
+        width: 120rem;
+        height: 40rem;
+    }
+
+    .main_visual .mbg_txt p {
+        font-family: 'Noto Serif KR';
+        font-size: 20rem;
+    }
+
+    .main_visual .mbg_txt span {
+        display: block;
+    }
+
+} */
+
 
 .main_visual .arrows {
     position: absolute;

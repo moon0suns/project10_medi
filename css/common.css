@@ -32,7 +32,7 @@ p {
     padding: 100rem 0;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 500px) {
     .section {
         padding: 50rem 0;
     }
