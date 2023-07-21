@@ -543,7 +543,7 @@
 
 }
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
     .main_visual .mbg_txt {
         position: absolute;
         top: 50%;
@@ -585,7 +585,7 @@
         display: block;
     }
 
-} */
+}
 
 
 .main_visual .arrows {
