@@ -47,7 +47,7 @@
 
 @media (max-width: 768px) {
     .tit h2 {
-        font-size: 32rem;
+        font-size: 28rem;
         text-align: center;
     }
 
@@ -58,15 +58,15 @@
 
 
     .desc h3 {
-        font-size: 24rem;
+        font-size: 20rem;
     }
 
     .desc strong {
-        font-size: 16rem;
+        font-size: 14rem;
     }
 
     .desc span {
-        font-size: 15rem;
+        font-size: 14rem;
     }
 }
 
@@ -110,6 +110,19 @@
 }
 
 
+@media (max-width: 768px) {
+    .header .logo {
+        display: block;
+        width: 140rem;
+        height: 20rem;
+        background: url(../images/logo.svg) no-repeat;
+    }
+
+    .header .header_wrap {
+        padding: 0 15rem;
+    }
+}
+
 .header .header_wrap {
     display: flex;
     justify-content: space-between;
@@ -123,6 +136,7 @@
 .header.on .header_wrap {
     height: 80rem;
 }
+
 
 
 .header .gnb {
@@ -500,13 +514,14 @@
 }
 
 @media (max-width: 768px) {
+
     .main_visual .mbg_txt {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        max-width: 1200rem;
+        max-width: auto;
         width: 100%;
         padding: 0 15rem;
         color: #fff;
@@ -522,70 +537,23 @@
     .main_visual .mbg_txt h2::before {
         content: "";
         position: absolute;
-        top: -10%;
-        left: 60%;
-        transform: translate(-50%, -50%);
+        top: -5%;
+        left: 47%;
+        transform: translate(0, -50%);
         text-align: center;
 
         background: url(../images/main_visual_symbol.svg) no-repeat;
-        width: 200rem;
-        height: 60rem;
-    }
-
-    .main_visual .mbg_txt p {
-        font-family: 'Noto Serif KR';
-        font-size: 32rem;
-    }
-
-    .main_visual .mbg_txt span {
-        display: block;
-    }
-
-}
-
-@media (max-width: 500px) {
-    .main_visual .mbg_txt {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        max-width: 1200rem;
-        width: 100%;
-        padding: 0 15rem;
-        color: #fff;
-    }
-
-
-
-    .main_visual .mbg_txt h2 {
-        font-size: 0;
-        background: none;
-    }
-
-    .main_visual .mbg_txt h2::before {
-        content: "";
-        position: absolute;
-        top: -10%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-
-        background: url(../images/main_visual_symbol.svg) no-repeat;
-        width: 120rem;
+        width: 160rem;
         height: 40rem;
     }
 
     .main_visual .mbg_txt p {
-        font-family: 'Noto Serif KR';
-        font-size: 20rem;
+        font-size: 28rem;
     }
 
-    .main_visual .mbg_txt span {
-        display: block;
-    }
 
 }
+
 
 
 .main_visual .arrows {
@@ -777,7 +745,7 @@
     }
 
     .main_doctor .doctor_wrap .desc h3 {
-        font-size: 22rem;
+        font-size: 20rem;
         font-weight: 500;
         line-height: 1.45;
     }
@@ -795,6 +763,19 @@
         height: 1px;
         background: #cdbfb3;
         margin: 10rem 0;
+    }
+
+
+    .main_doctor .doctor_slide .itm strong {
+        font-size: 14rem;
+    }
+
+    .main_doctor .doctor_slide .itm span {
+        font-size: 10rem;
+    }
+
+    .main_doctor .doctor_slide .itm a {
+        font-size: 12rem;
     }
 
 }
@@ -867,7 +848,7 @@
         top: 62%;
         left: 50%;
         transform: translate(-50%, 0);
-        z-index: 999;
+        z-index: 9999;
         max-width: 580px;
         width: 100%;
         padding: 0 15px;
@@ -957,7 +938,6 @@
         max-width: calc((100% - 1170rem) / 2 + 1170rem);
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
     }
 
     .main_story .story_con .fg {
@@ -1146,6 +1126,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 25rem 0 0 0;
 }
 
 .main_consul .tel_box .txt strong {
@@ -1231,20 +1212,55 @@
 @media (max-width: 768px) {
     .main_consul .tel_box {
         width: 100%;
-        padding: 70rem 30rem 145rem 70rem;
-        background: url(../images/img_tel.jpg) no-repeat 50% 50% /cover;
-        color: #fff;
+        padding: 0 0 0 0;
     }
+
+    .main_consul .tel_box .txt {
+        padding: 15rem 15rem;
+    }
+
+    .main_consul .tel_box .txt strong {
+        font-size: 16rem;
+    }
+
+    .main_consul .tel_box .txt .num {
+        font-size: 28rem;
+    }
+
+    .main_consul .tel_box .txt p {
+        font-size: 12rem;
+    }
+
 
     .main_consul .content {
         display: flex;
         flex-direction: column;
-        gap: 50rem;
-
+        gap: 30rem;
     }
+
+    .main_consul .content ul {
+        width: 100%;
+    }
+
+    .main_consul .content ul>li span {
+        font-size: 16rem;
+    }
+
+
+    .main_consul .content ul>li p {
+        font-size: 14rem;
+    }
+
+    .main_consul .content ul>li i {
+        font-size: 20rem;
+    }
+
+    .main_consul .content ul>li .xi-angle-right-min {
+        font-size: 12rem;
+        vertical-align: 2px;
+    }
+
 }
-
-
 
 
 
@@ -1338,13 +1354,13 @@
 
 @media (max-width: 768px) {
     .footer .ft .con>ul>li {
-        font-size: 14rem;
+        font-size: 12rem;
         color: #888;
     }
 
 
     .footer .fb {
-        font-size: 14rem;
+        font-size: 12rem;
         color: #888;
     }
 
