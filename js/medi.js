@@ -30,10 +30,8 @@ $(function () {
         spaceBetween: 20,
         autoplay: {
             delay: 4000,
-            //disableOnInteraction: false,
         },
 
-        // 반응형갔을때
         breakpoints: {
             768: {
                 slidesPerView: 2.5,
@@ -58,7 +56,6 @@ $(function () {
         spaceBetween: 20,
         autoplay: {
             delay: 4000,
-            //disableOnInteraction: false,
         },
 
         pagination: {
@@ -66,7 +63,6 @@ $(function () {
             type: "progressbar",
         },
 
-        // 반응형갔을때
         breakpoints: {
             768: {
                 slidesPerView: 4,
@@ -87,26 +83,18 @@ $(function () {
 
 
 
-
-
-    // 스크롤 업
     $('.to_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 600)
     });
 
-    //   스크롤없애는거
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
-        // 첫번째방법 sct > 1000 ? $('.to_top').fadeIn(1000) : $('.to_top').fadeOut();
         sct > 2000 ? $('.to_top').addClass('on') : $('.to_top').removeClass('on');
     })
 
 
-    AOS.init();
 
-    // 📳 반응형
 
-    // 2 서부메뉴 누르면 나오게
     $('.header .gnb>ul>li').on('click', function (e) {
         if ($('.header .gnb').hasClass('on')) {
             e.preventDefault();
@@ -115,14 +103,12 @@ $(function () {
 
     });
 
-    // 3 클릭햇을때 메뉴 나오게
     $('.mopen').on('click', function () {
         $(this).toggleClass('on')
         $('.gnb').toggleClass('on')
     });
 
 
-    //pc버전에서 오류작동 잡기
     $(window).on('resize', function () {
         $('.header .gnb').removeClass('on');
         $('.sub').removeAttr('style');
